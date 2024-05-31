@@ -1,0 +1,242 @@
+/* *{
+    margin: 0;
+    padding: 0;
+}
+.sidebar ul li a{
+    
+    text-decoration: none;  
+    
+
+}
+.sidebar .logo{
+    font-size: 24px;
+    text-decoration: none;
+    padding-bottom: 10px;
+}
+.sidebar{
+    background-color: cadetblue;
+    height: 100%;
+    position: fixed;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    padding-top: 100px;
+
+} */
+
+/* * {
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar {
+  background-color: rgb(3, 26, 27);
+  height: 100%;
+  position: fixed;
+  width: 240px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  padding-top: 70px;
+  background-image: url(./img/tree.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.sidebar .logo a img {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  margin: -50px;
+  padding-bottom: 30px;
+}
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+.sidebar ul li a {
+  text-decoration: none;
+  display: block;
+
+  padding-top: 45px;
+  color: rgb(248, 247, 247);
+}
+ul li a {
+  font-weight: bold;
+}
+
+.home {
+  
+  color: black;
+  position: relative;
+  padding-left: 300px;
+  padding-top: 15%;
+  background-color: rgb(26, 137, 241);
+ z-index: -1000;
+  height: 405px;
+}
+.home .name {
+  font-family: "Skranji", system-ui;
+  font-size: 55px;
+}
+.home .namepa{
+    font-size: 25px;
+    font-weight: 500;
+}
+.home .contact{
+    display: flex;
+}
+.home .contact .social{
+    padding-left: 10%;
+}
+.contact {
+    padding-top: 25px;
+}
+.home .contact .social {
+   font-size: 30px;
+}
+.home .contact .btn button{
+    padding: 10px;
+} */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    background-color: rgb(3, 26, 27);
+    height: 100%;
+    position: fixed;
+    width: 240px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    padding-top: 70px;
+    background-image: url(./img/tree.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: 10; /* Ensure sidebar is above other content */
+}
+
+.sidebar .logo a img {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    margin: -50px;
+    padding-bottom: 30px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 20px; /* Adds spacing between list items */
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    display: block;
+    padding-top: 35px;
+    color: rgb(248, 247, 247);
+    font-weight: bold;
+}
+
+.home {
+    color: black;
+    position: relative;
+    padding-left: 300px;
+    padding-top: 15%;
+    background-color: rgb(26, 137, 241);
+    height: 405px;
+    z-index: 1; /* Ensure home content is below the sidebar */
+}
+
+.home .name {
+    font-family: "Skranji", system-ui;
+    font-size: 55px;
+}
+
+.home .namepa {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.home .contact {
+    display: flex;
+    padding-top: 25px;
+}
+
+.home .contact .social {
+    padding-left: 10%;
+    font-size: 30px;
+}
+.home .contact .social a i{
+    padding: 8px;
+    border-radius: 50%;
+    background-color: black;
+    color: rgb(16, 12, 233);
+}
+.home .contact .social a i:hover{
+   background-color: aliceblue;
+}
+
+.home .contact .btn button {
+    padding: 10px;
+    border-radius: 12px;
+    background-color: rgb(60, 120, 231);
+    color: rgb(252, 251, 251);
+}
+.home .contact .btn button:hover{
+    background-color: black;
+}
+.about{
+    background-color:rgb(26, 137, 241) ;
+}
+.about p{
+    padding-left: 300px;
+    padding-right: 100px;
+}
+
+/* Media Query for Horizontal Layout on Small Screens */
+@media (max-width: 768px) {
+    .sidebar {
+        height: auto;
+        width: 100%;
+        position: relative;
+        padding-top: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 10; /* Ensure sidebar is on top */
+    }
+
+    .sidebar ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .sidebar ul li {
+        margin: 0 10px;
+        margin-bottom: 0; /* Remove bottom margin in horizontal layout */
+    }
+
+    .sidebar ul li a {
+        padding: 10px 20px; /* Adjust padding for better horizontal spacing */
+    }
+}
+
+/* Further adjustments for very small screens (mobile) */
+@media (max-width: 480px) {
+    .sidebar ul li a {
+        padding: 8px 15px; /* Adjust padding for smaller screens */
+    }
+}
+
+
